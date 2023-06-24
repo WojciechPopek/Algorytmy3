@@ -1,0 +1,17 @@
+import random
+
+def print_reverse_array(array):
+    
+for i in range(len(array) - 1, -1, -1):
+        
+print(array[i])
+
+size = int(input("Podaj wielkość tablicy: "))
+
+my_array = [random.randint(1, 100) for _ in range(size)]
+
+print("Tablica:", my_array)
+
+print("Tablica od tyłu:")
+
+print_reverse_array(my_array)
